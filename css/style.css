@@ -1,0 +1,381 @@
+/* 
+    Document   : style
+    Created on : 22 août 2013, 16:19:47
+    Author     : Kurt
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+html{
+	height: 100%;
+}
+
+
+body{
+    font-family: 'Lucida Console',  'Courier New', Monaco, monospace;
+    margin:0;
+    padding:0;
+    color:#3a3a3a;
+    font-size: 0.8em;
+    height:100%;
+}
+
+a, a:hover, a:visited{
+    color:#3a3a3a;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+
+h1{
+    font-size: 3em;
+    color:#cecece;
+    font-weight: bold;
+}
+
+article h1{
+    font-size: 1.4em;
+    color:#348ec1;
+    font-weight: bold;
+    margin:0;
+    padding-bottom: 20px;
+}
+
+h3{
+    font-size: 1.4em;
+    font-weight: bold;
+    margin:0;
+}
+
+h4{
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    margin: 0 0 15px 0;
+}
+
+.float-left{
+    float:left;
+}
+
+.box-center{
+    float: left;
+    clear:both;
+}
+
+.clear-fix{
+    clear:both;
+}
+
+
+/* icone */ 
+
+.icon-tel,
+.icon-mail{
+    display:inline-block;
+    width:14px;
+    height:15px;
+    position: relative;
+    top:2px;
+}
+
+.icon-tel{
+    background: url('../img/tel.png') no-repeat;
+}
+
+.icon-mail{
+    background: url('../img/mail.png') no-repeat;
+}
+
+.icon-pdf{
+    display:inline-block;
+    width:16px;
+    height:16px;
+    position: relative;
+    top:2px;
+    background: url('../img/pdf.png') no-repeat;
+}
+
+/* note */
+
+.note{
+    display:inline-block;
+    vertical-align: middle;
+    position: relative;
+    top:-4px;
+    height:27px;
+    width:138px;
+    background: url('../img/etoile.png') no-repeat;
+    background-position: bottom left;
+}
+
+.note-5{ background-position: top left; }
+.note-4{ background-position: 0 -27px; }
+.note-3{ background-position: 0 -54px; }
+.note-2{ background-position: 0 -81px; }
+.note-1{ background-position: 0 -108px; }
+
+/* fleche */
+.fleche{
+    width:60px;
+    height:60px;
+    background: url('../img/fleche.png') no-repeat;
+    position: absolute;
+    display: none;
+}
+
+.fleche-r{ background-position: top left; right:0; }
+.fleche-r:hover{ background-position: top right; }
+.fleche-l{ background-position: bottom left; left:0}
+.fleche-l:hover{ background-position: bottom right;}
+
+/* wrapper */
+#root-wrapper{
+    width:980px;
+    margin: 0 auto;
+    height:100%;
+}
+
+/* header*/
+
+header{
+    position: fixed;
+    float:left;
+    min-height: 550px;
+    height:100%;
+    float:left;
+    border-right: 2px #cecece dashed;
+    z-index: 400;
+    background:#fff;
+}
+
+header .pres{
+    padding:30px;
+}
+
+header h1{
+    white-space: nowrap;
+    position:absolute;
+    /*right:0;*/
+    bottom: 150px;
+    -moz-transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    -o-transform:rotate(90deg);
+    transform:rotate(90deg);
+}
+
+header .photo{
+    position:absolute;
+    left:30px;
+    bottom: 20px;
+}
+
+/* nav */
+nav{
+    font-size: 1.4em;
+    font-weight: bold;
+    margin:0;
+    padding:30px 30px 30px 290px;
+    padding-bottom: 20px;  
+}
+
+nav ul{
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 0 10px 0 0;
+    color:#cecece;
+    cursor:pointer;
+}
+
+nav ul li.active{
+    color:#348ec1;
+}
+
+    
+/* content */
+
+#wrapper{
+    position:relative;
+    float:left;
+    margin: 0 30px 30px 290px;
+    font-size: 1.2em;
+    width:657px;
+}
+
+#wrapper ul{
+    list-style: none;
+}
+
+
+/* competance */
+
+ul#competance{
+    float:left;
+    text-align: right;
+    font-weight: bold;
+}
+
+ul#competance li{
+    margin-bottom: 10px;
+}
+
+/* cms & apprentissage */
+#cms, 
+#apprentissage{
+    line-height: 130%;
+}
+
+/* experence */
+#page-experence{
+    float:left;
+    display: none;
+}
+
+#page-experence .experence-item{
+    background: url('../img/bg-exp.png') no-repeat top left;
+    padding-bottom: 40px;
+    float:left;
+    clear: both;
+}
+
+#page-experence .experence-item:last-child{
+    background: none;
+    padding-bottom: 30px;
+}
+
+#page-experence .experence-item div{
+    float:left;
+}
+
+#page-experence .experence-item .date{
+    width:85px;
+}
+
+#page-experence .experence-item .round{
+    width:30px;
+    height:30px;
+    margin:0 20px 0 0;
+    background: url('../img/rond.png') no-repeat top left;
+}
+
+#page-experence .experence-item .infos{
+    display:none;
+    color:#a8a5a5;
+}
+
+#page-experence .experence-item .infos p{
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+}
+
+
+
+#page-experence .experence-item{
+    cursor: default;
+}
+
+#page-experence .experence-item.plusinfo a{
+    color:#a8a5a5;
+}
+
+#page-experence .experence-item.plusinfo:hover .round{
+    background-position: top center;
+}
+
+
+#page-experence .experence-item:hover .round{
+    background-position: top right;
+}
+
+#page-experence .experence-item:hover:first-child .round,
+#page-experence .experence-item:first-child .round{
+    background: url('../img/rond-first.png') no-repeat;
+}
+
+#page-experence h1{
+    font-size: 1em;
+    color: #3a3a3a;
+    margin:0;
+    padding: 0;
+}
+
+#page-experence h2{
+    font-size: 1em;
+    color: #3a3a3a;
+    font-weight: normal;
+    margin:0;
+    padding: 0;
+}
+
+/* divers */
+#page-divers{
+    float:left;
+    display: none;
+}
+
+/* contact */
+/*#page-contact{
+    float:left;
+    display: none;
+}
+
+#page-contact li{
+    margin-bottom:5px;
+}
+
+#page-contact li:last-child{
+    padding-left: 130px;
+}
+
+#page-contact label{
+    display: inline-block;
+    width:120px;
+    text-align: right;
+    margin-right: 10px;
+    vertical-align: top;
+    margin-top: 7px;
+}
+
+#page-contact input,
+#page-contact textarea{
+    font-family: 'Lucida Console',  'Courier New', Monaco, monospace;
+}
+
+#page-contact input[type=text]{
+    width:300px;
+    padding:5px;
+    border: #cecece 1px solid;
+}
+
+#page-contact textarea{
+    width:450px;
+    height:350px;
+    padding:5px;
+    border: #cecece 1px solid;
+}
+
+#page-contact textarea:focus,
+#page-contact input[type=text]:focus{
+    background: #edebeb;
+}
+
+#page-contact input[type=submit]{
+    padding:10px 15px;
+    font-weight: bold;
+}*/
